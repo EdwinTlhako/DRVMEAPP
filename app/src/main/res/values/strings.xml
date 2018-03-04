@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">DrvMe</string>
+    <string name="splashlogo" />
+    <string name="login">Login</string>
+    <string name="e_mail">E-mail</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="name">Name</string>
+    <string name="surname">Surname</string>
+    <string name="contact_number">Contact number</string>
+    <string name="re_type_password">Re-type password</string>
+    <string name="continuereg">Continue>></string>
+    <string name="card_infomation">Card infomation</string>
+    <string name="card_no">Card no.</string>
+    <string name="mastercard">Mastercard</string>
+    <string name="visa">Visa</string>
+    <string name="select_card_type">Select card type</string>
+    <string name="cvc_no">CVC no.</string>
+    <string name="expiry_date">Expiry date</string>
+    <string name="submit_reg">Submit</string>
+    <string name="skip_cardinfo"><![CDATA[Skip>>]]></string>
+    <string name="sidebarview" />
+    <string name="where_to">Where to?</string>
+    <string name="request_nearby_driver">Request nearby driver</string>
+
+
+</resources>
