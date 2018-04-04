@@ -20,6 +20,7 @@ public class RegisterActivity extends AppCompatActivity {
 
     public void contReg(View view)
     {
-        startActivity(new Intent(RegisterActivity.this,LogPaymentInfomationActivity.class));
+        startActivity(new Intent(RegisterActivity.this,LogPaymentInformationActivity.class));
+        RegisterActivity.this.finish();
     }
 }

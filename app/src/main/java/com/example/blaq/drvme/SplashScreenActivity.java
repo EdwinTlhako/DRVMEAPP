@@ -18,35 +18,35 @@ public class SplashScreenActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
 
-       getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams
-               .FLAG_FULLSCREEN);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams
+                .FLAG_FULLSCREEN);
 
-       progressBar= findViewById(R.id.pb_splash);
-       handler = new Handler();
+        progressBar= findViewById(R.id.pb_splash);
+        handler = new Handler();
 
-       new Thread(new Runnable() {
-           @Override
-           public void run() {
-               while (progress < 100)
-               {
-                   progress++;
-                   android.os.SystemClock.sleep(100);
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                while (progress < 100)
+                {
+                    progress++;
+                    android.os.SystemClock.sleep(100);
                     handler.post(new Runnable() {
                         @Override
                         public void run() {
                             progressBar.setProgress(progress);
                         }
                     });
-               }
-               handler.post(new Runnable() {
-                   @Override
-                   public void run() {
-                       startActivity(new Intent(SplashScreenActivity.this,LoginActivity.class));
-                       SplashScreenActivity.this.finish();
-                   }
-               });
-           }
-       }).start();
+                }
+                handler.post(new Runnable() {
+                    @Override
+                    public void run() {
+                        startActivity(new Intent(SplashScreenActivity.this,LoginActivity.class));
+                        SplashScreenActivity.this.finish();
+                    }
+                });
+            }
+        }).start();
     }
 
 }

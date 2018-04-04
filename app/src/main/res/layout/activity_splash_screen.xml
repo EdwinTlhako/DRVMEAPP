@@ -12,9 +12,10 @@
         android:id="@+id/iv_splashlogo"
         android:layout_width="320dp"
         android:layout_height="150dp"
-        android:layout_alignParentTop="true"
+        android:layout_alignParentTop="false"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="235dp"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
         android:contentDescription="@string/splashlogo"
         android:scaleType="centerInside"
         app:srcCompat="@drawable/drvmelogocroped" />
@@ -25,5 +26,7 @@
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/iv_splashlogo"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/DrvmePink"
+        />
 </RelativeLayout>

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/background_light"
-    tools:context="com.example.blaq.drvme.LogPaymentInfomationActivity">
+    tools:context="com.example.blaq.drvme.LogPaymentInformationActivity">
 
     <ImageView
         android:id="@+id/imageView"
@@ -14,8 +14,9 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="54dp"
+        android:layout_marginTop="25dp"
         android:contentDescription="@string/splashlogo"
+        android:foregroundGravity="center"
         app:srcCompat="@drawable/drvmelogocroped" />
 
     <TextView
@@ -35,12 +36,14 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/tv_regpaymentInfo"
-        android:layout_marginTop="19dp">
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="19dp"
+        android:id="@+id/scrollView2">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <EditText
                 android:id="@+id/et_cardno"
@@ -49,7 +52,10 @@
                 android:ems="10"
                 android:hint="@string/card_no"
                 android:inputType="number"
-                android:textColorHint="@android:color/darker_gray" />
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textColorHighlight="@color/DrvmePink"
+                android:textColorHint="@android:color/darker_gray"
+                android:textColorLink="@color/DrvmePink" />
 
             <Space
                 android:layout_width="match_parent"
@@ -101,7 +107,10 @@
                 android:ems="10"
                 android:hint="@string/cvc_no"
                 android:inputType="number"
-                android:textColorHint="@android:color/darker_gray" />
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textColorHighlight="@color/DrvmePink"
+                android:textColorHint="@android:color/darker_gray"
+                android:textColorLink="@color/DrvmePink" />
 
             <EditText
                 android:id="@+id/et_exp_date"
@@ -110,17 +119,22 @@
                 android:ems="10"
                 android:hint="@string/expiry_date"
                 android:inputType="date"
-                android:textColorHint="@android:color/darker_gray" />
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textColorHighlight="@color/DrvmePink"
+                android:textColorHint="@android:color/darker_gray"
+                android:textColorLink="@color/DrvmePink" />
 
             <Space
                 android:layout_width="match_parent"
-                android:layout_height="25dp" />
+                android:layout_height="35dp" />
 
             <Button
                 android:id="@+id/btn_submitReg"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="45dp"
+                android:layout_gravity="center"
                 android:background="@drawable/botton"
+                android:onClick="goToHome"
                 android:text="@string/submit_reg" />
 
             <Space
@@ -129,8 +143,9 @@
 
             <Button
                 android:id="@+id/btn_skipCardInfo"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="45dp"
+                android:layout_gravity="center"
                 android:background="@drawable/botton"
                 android:onClick="goToHome"
                 android:text="@string/skip_cardinfo" />
@@ -139,7 +154,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="25dp" />
 
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginBottom="148dp" />
+
         </LinearLayout>
 
     </ScrollView>
+
 </RelativeLayout>

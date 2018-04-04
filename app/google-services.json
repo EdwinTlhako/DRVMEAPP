@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "660181376043",
+    "firebase_url": "https://drvmeapp.firebaseio.com",
+    "project_id": "drvmeapp",
+    "storage_bucket": "drvmeapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:660181376043:android:20394e1ae4a5a8f0",
+        "android_client_info": {
+          "package_name": "com.example.blaq.drvme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "660181376043-g1pmqr11indfbum4a4p0ur9lqma1fnqb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.blaq.drvme",
+            "certificate_hash": "af615d3b6297f3b336636514f9a6ec1799649e85"
+          }
+        },
+        {
+          "client_id": "660181376043-jt2qqc8rqcsa2v15vo8sj3jovpnf12ga.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrH7vw38dLOkVycfQOSt4DS7nToTlpyFE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "660181376043-jt2qqc8rqcsa2v15vo8sj3jovpnf12ga.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
